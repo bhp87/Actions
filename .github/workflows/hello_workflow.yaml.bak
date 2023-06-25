@@ -4,9 +4,9 @@ jobs:
   external-workflow:
     runs-on: ubuntu-latest
     steps:
-      - uses: https://github.com/abystoma/checkout@v1
+      - uses: abystoma/checkout@v1
         with:
-          repository: abystoma/external-workflow
+          repository: abystoma/external-workflow/tree
           ref: 3eb718710f20d7df6874acdc41e189a2ae4182f5
       - name: Greetings
         run: echo "$(<greeting.txt)"
